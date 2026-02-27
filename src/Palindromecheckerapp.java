@@ -1,7 +1,11 @@
 public class Palindromecheckerapp {
     public static void main(String[] args) {
-        String word = "madam";
-        String reversed = new StringBuilder(word).reverse().toString();
+        String word = "level";
+        String reversed = "";
+
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed = reversed + word.charAt(i);
+        }
 
         System.out.println("Word to check: " + word);
 
@@ -11,7 +15,4 @@ public class Palindromecheckerapp {
             System.out.println("Result: The string is not a palindrome.");
         }
     }
-
-
-
 }
